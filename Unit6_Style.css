@@ -1,0 +1,180 @@
+﻿body {
+    margin: 10px;
+    background-color:rgba(167, 201, 201, 0.485);
+}
+
+
+
+.HeaderColumnLeft {
+
+    background-image: url('../Images/HotBeans.PNG');
+    background-repeat: no-repeat;
+    float: left;
+    width: 20%;
+    height:22vh;
+    img{
+        width: 100%;
+        animation: animations 1s infinite;
+    }
+}
+
+@keyframes animations{
+    0%{
+        transform: translateX(0%);
+    }
+      25%{
+        transform: translateX(1%);
+    }
+     75%{
+        transform: translateX(-1%);
+    }
+      10%{
+        transform: translateX(0%);
+    }
+}
+
+
+.HeaderColumnRight {
+    overflow: auto;
+    background-color:rgba(224, 176, 19, 0.51);
+    float: right;
+    height: 20vh;
+    width: 60%;
+}
+
+
+.HeaderTitle {
+        padding-top:30px;
+        text-align:center;
+        font-family: 'MS Reference Sans Serif';
+        font-style: italic;
+        font-size: 4vh;
+    }
+
+.HeaderText {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'MS Reference Sans Serif';
+    font-style: italic;
+    font-size: 2vh;
+}
+
+
+.HeaderRow:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: #21ba51;
+}
+
+/* The navbar container */
+.topnav
+    {
+    overflow:hidden;
+    background-color: hsla(192, 86%, 45%, 0.778);
+}
+
+    /* Navbar links */
+    .topnav a {
+        float: left;
+        display: normal;
+        color: #fbfbfcf4;
+        text-align: center;
+        padding: 2vh 6vh;
+        text-decoration:none;
+        font-weight:bold;
+        font-size:2vh;
+        width: 18vh;
+    }
+
+        /* Links - change color on hover */
+        .topnav a:hover {
+            background-color: #8498d336;
+            color: rgb(6, 35, 110);
+        }
+
+/***************** Style the main part of the page******************* */
+/* Create three equal columns that floats next to each other */
+.columnLeft {
+    display: inline-block;
+    width: 30vh;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnCentre {
+    display:inline-block;
+    width: 100vh;
+    height: 30em;
+    border-style: ridge;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(221, 211, 25, 0.496);
+}
+
+/* Create three equal columns that floats next to each other */
+.columnRight {
+    display: inline-block;
+    width: 22vh;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+/********************************************************************************/
+/***************** Style the footer******************* */
+.footer {
+    text-align: center;
+    margin-left: 40vh;
+    padding: 1%;
+    width: 100vh;
+    height: 10vh;
+    /**fix some images in the footer*/
+    background-image: url('../Images/CSS.png'), url('../Images/visual studio code.png'), url('../Images/htmlLogo.png');
+    background-position:  left,  center,  right;
+    background-size: contain, contain, contain;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/***************** Style the page elements******************* */
+/*style used for the list on the home page to make sure that images align correctly.*/
+ul {
+    display:inline-block;
+    text-align:center;
+}
+
+li {
+    text-align: left;
+}
+
+/*style used for the paragraph on the company profile page*/
+.ProfileText {
+    display: inline-block;
+    text-align: center;
+    font-weight:bold;
+}
+/***************** Style the error messsages******************* */
+.Error{
+    color:rgba(210, 36, 36, 0.568);
+    font-weight:normal;
+}
+
+label {
+    font-weight: bold;
+}
+
